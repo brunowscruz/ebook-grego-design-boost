@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/landing/HeroSection";
+import ForYouSection from "@/components/landing/ForYouSection";
+import BenefitsSection from "@/components/landing/BenefitsSection";
+import AuthorSection from "@/components/landing/AuthorSection";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import OfferSection from "@/components/landing/OfferSection";
+import FaqSection from "@/components/landing/FaqSection";
+import FinalCtaSection from "@/components/landing/FinalCtaSection";
+
+const KIWIFY_URL = "https://pay.kiwify.com.br/SZzoG8o";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background">
+      <HeroSection ctaUrl={KIWIFY_URL} />
+      <ForYouSection />
+      <BenefitsSection />
+      <AuthorSection />
+      <TestimonialsSection />
+      <OfferSection ctaUrl={KIWIFY_URL} />
+      <FaqSection />
+      <FinalCtaSection ctaUrl={KIWIFY_URL} />
+    </main>
   );
 };
 

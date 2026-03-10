@@ -6,12 +6,14 @@ import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import OfferSection from "@/components/landing/OfferSection";
 import FaqSection from "@/components/landing/FaqSection";
 import FinalCtaSection from "@/components/landing/FinalCtaSection";
+import UrgencyBar from "@/components/landing/UrgencyBar";
 
 const KIWIFY_URL = "https://pay.kiwify.com.br/SZzoG8o";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
+      <UrgencyBar />
       <HeroSection ctaUrl={KIWIFY_URL} />
       <ForYouSection />
       <BenefitsSection />

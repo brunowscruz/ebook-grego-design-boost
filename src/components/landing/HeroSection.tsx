@@ -40,14 +40,14 @@ const HeroSection = ({ ctaUrl }: { ctaUrl: string }) => {
               <span className="text-sm text-muted-foreground">25 anos de ministério pastoral</span>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="cta-button cta-pulse text-base md:text-lg">
-                📘 QUERO APRENDER GREGO BÍBLICO
-              </a>
+            <div className="flex flex-col items-center lg:items-start gap-4">
               <div className="price-tag">
                 <span className="text-sm text-muted-foreground">por apenas</span>
                 <span className="text-3xl font-bold">R$19,90</span>
               </div>
+              <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="cta-button cta-pulse text-base md:text-lg">
+                📘 QUERO APRENDER GREGO BÍBLICO
+              </a>
             </div>
 
             <p className="text-xs text-muted-foreground mt-3">
